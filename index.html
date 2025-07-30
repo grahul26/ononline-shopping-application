@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Store</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        body{
+
+            background-color: rgb(194, 237, 223);
+        }
+ 
+
+        h1{
+             text-align: center;
+        }
+        h2{
+            margin: 10px 0;
+        }
+
+        .Online-shoping-container{
+
+            max-width: 800px;
+            background-color: white;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 gray;
+           
+        }
+
+        .Product-row{
+
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            align-items: center;
+            margin: 10px 0;
+        
+        }
+
+        button{
+
+            background-color: rgb(215, 31, 132);
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        button:hover{
+            background-color: rgb(73, 239, 106);
+        }
+
+        #feedback{
+            /* text-align: right; */
+            position: fixed;
+            top:20px;
+            right: 2px;
+            background-color: white;
+            padding: 10px;
+            display: none;
+            color: white;
+        }
+
+
+        #totalPrice{
+
+            text-align: right;
+
+
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="Online-shoping-container">
+
+        
+
+        <h1  >Online Shopping</h1>
+
+        <p id="feedback" ></p>
+
+        <h2>Avaiable Products</h2>
+
+        <div id="productsContainer">
+
+        <!-- <div class="Product-row">
+
+            <p>Laptop - Rs. 50000</p>
+            <button>Add to cart</button>
+
+        </div>
+
+        <div class="Product-row">
+
+            <p>Laptop - Rs. 50000</p>
+            <button>Add to cart</button>
+
+        </div> -->
+
+        <!-- <div class="Product-row">
+
+            <p>Laptop - Rs. 50000</p>
+            <button>Add to cart</button>
+
+        </div>
+
+        </div> -->
+
+        
+
+
+    </div>
+    <h2>My Cart</h2>
+    <div id="cartContainer">
+
+        <!-- <div class="Product-row">
+            <p>Laptop - Rs. 50000</p>
+            <button id="testing" onclick="testingDetails">Remove</button>
+        </div> -->
+    </div>
+    <h2 id="totalPrice">Rs.0</h2>
+
+    <h2>Actions</h2>
+    <button id="sortByPrice">Sort by Price</button>
+    <button id="clearCart">Clear cart</button>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
